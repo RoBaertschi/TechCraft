@@ -1,0 +1,261 @@
+{
+	id: "1CCC88B90E546F78"
+	group: "227D3C40011BC1D5"
+	order_index: 1
+	filename: "how_to_get_started"
+	title: "How to get started..."
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting Started: Get Some cobble"
+			x: -2.0d
+			y: 0.0d
+			description: [
+				"32x Cobbelstone but how?"
+				"Right click the ground and you will get cobblestone!"
+			]
+			size: 2.0d
+			id: "137410B976EA49C2"
+			tasks: [{
+				id: "1A8D461EF9EA6845"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 32L
+			}]
+			rewards: [{
+				id: "7F7773913C01D1BC"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 16
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["This is needed for many Recepies. You should have a Crafting Table on a Stick, when not then check out the Tab Straded Forever!"]
+			dependencies: [
+				"137410B976EA49C2"
+				"60F9F82A12629D20"
+			]
+			id: "6C0CB4393D5A17E4"
+			tasks: [{
+				id: "6967A01AA36F5267"
+				type: "item"
+				item: "compressium:cobblestone_1"
+			}]
+			rewards: [{
+				id: "630684ED797C16E9"
+				type: "item"
+				item: "compressium:cobblestone_1"
+				count: 2
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["Look in JEI"]
+			dependencies: ["6C0CB4393D5A17E4"]
+			optional: true
+			id: "7D4BBE273ABFAF32"
+			tasks: [{
+				id: "4CD36EEFEB4B2BFF"
+				type: "item"
+				item: "stonechest:chest_cobblestone"
+			}]
+			rewards: [{
+				id: "63F43A4FA9210422"
+				type: "item"
+				item: "stonechest:part_cobblestone"
+				count: 4
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			description: ["For Pickaxe as handle!"]
+			dependencies: ["6C0CB4393D5A17E4"]
+			id: "69223BCF67B7B71D"
+			tasks: [{
+				id: "1D4525888E3AD431"
+				type: "item"
+				item: {
+					id: "tconstruct:tool_handle"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4572C802A5A4D28E"
+				type: "item"
+				item: {
+					id: "tconstruct:tool_handle"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			dependencies: ["6C0CB4393D5A17E4"]
+			id: "2A88373133ED9C94"
+			tasks: [{
+				id: "5B3D67685578B36C"
+				type: "item"
+				item: {
+					id: "tconstruct:pick_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			description: ["To bind the Head with the Handle!"]
+			dependencies: ["69223BCF67B7B71D"]
+			id: "681533DEB39B2C50"
+			tasks: [{
+				id: "3192DCD309830ED0"
+				type: "item"
+				item: {
+					id: "tconstruct:tool_binding"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			description: ["For Digging!"]
+			dependencies: [
+				"2A88373133ED9C94"
+				"681533DEB39B2C50"
+			]
+			id: "58F1D9C4DED54CCB"
+			tasks: [{
+				id: "0B59FC7E48BF7BDA"
+				type: "item"
+				item: {
+					id: "tconstruct:pickaxe"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:mining_speed": 4.2f
+							"tconstruct:attack_damage": 1.0f
+							"tconstruct:harvest_tier": "minecraft:stone"
+							"tconstruct:durability": 116.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:piercing"
+								level: 1s
+							}
+							{
+								name: "tconstruct:stonebound"
+								level: 3s
+							}
+						]
+						tic_materials: [
+							"tconstruct:rock"
+							"tconstruct:rock"
+							"tconstruct:rock"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0B5888DE399F82E0"
+				type: "item"
+				item: "minecraft:cooked_beef"
+				count: 6
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.0d
+			description: ["Craft the repair kit with the pickaxe to gether to repair it."]
+			dependencies: ["58F1D9C4DED54CCB"]
+			id: "1904D4ADCE3298C9"
+			tasks: [{
+				id: "3598B307A9343F32"
+				type: "item"
+				item: {
+					id: "tconstruct:repair_kit"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6A8A82BDE879D04B"
+				type: "item"
+				item: {
+					id: "tconstruct:repair_kit"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:rock"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			dependencies: ["1904D4ADCE3298C9"]
+			id: "5480C4CE9C5BF3CA"
+			tasks: [{
+				id: "070F72FF830D316E"
+				type: "item"
+				item: "kubejs:dirt_fragment"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6206CB883FE3F9C0"
+				type: "item"
+				item: "kubejs:dirt_fragment"
+				count: 16
+			}]
+		}
+		{
+			x: 18.5d
+			y: 0.0d
+			dependencies: ["5480C4CE9C5BF3CA"]
+			id: "1BC93BE9A102F8A2"
+			tasks: [{
+				id: "514786AC189A1780"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 4L
+			}]
+			rewards: [{
+				id: "370BF293F381174F"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+	]
+}

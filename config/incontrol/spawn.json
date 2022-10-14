@@ -1,0 +1,12 @@
+[
+    {
+        "dimension": "minecraft:overworld",
+        "block": "minecraft:coarse_dirt",
+        "result": "default"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "result": "deny"
+    }
+    
+]

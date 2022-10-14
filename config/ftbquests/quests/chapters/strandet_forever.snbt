@@ -1,0 +1,56 @@
+{
+	id: "4ABADA865C84ED6D"
+	group: "227D3C40011BC1D5"
+	order_index: 0
+	filename: "strandet_forever"
+	title: "Strandet Forever?"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			description: [
+				"What happend here? Where is everyone?"
+				"I remeber, we had a Time Machine.... But something didn't work as planned. The Machine didn't change Time but it changed the World. Everybody died, i only survived because i was in the Machine."
+			]
+			id: "60F9F82A12629D20"
+			tasks: [{
+				id: "4D253231F792ECEF"
+				type: "checkmark"
+				title: " Help!!"
+			}]
+			rewards: [
+				{
+					id: "52C0B67799032EE5"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 5
+				}
+				{
+					id: "04F0577B23939C8E"
+					type: "item"
+					item: "crafting_on_a_stick:crafting_table"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			shape: "heart"
+			description: ["Thank you for playing this Modpack. It is my first and I hope that you will enjoy it."]
+			dependencies: ["60F9F82A12629D20"]
+			id: "18BD84B58319773B"
+			tasks: [{
+				id: "12EB85C063F8A9BD"
+				type: "checkmark"
+				title: "Thanks for playing!"
+			}]
+			rewards: [{
+				id: "162B9E0BB7528870"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+	]
+}

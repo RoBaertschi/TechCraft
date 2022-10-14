@@ -1,0 +1,7 @@
+[
+    {
+        "block": "minecraft:stone",
+        "give": "minecraft:cobblestone",
+        "result": "default"
+    }
+]

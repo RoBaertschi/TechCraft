@@ -1,0 +1,29 @@
+{
+  // The template which will be used for spawn only
+  // Example: 
+  // {
+  //     "name": "default",
+  //     "desc": "",
+  //     "file": "default.nbt",
+  //     "spawns": "default",
+  //     "direction": "south"
+  // }
+  "spawn": null,
+  
+  "spawns": {
+    "skyblockrepair": [
+      [ 0, 0, 0 ]
+    ]
+  },
+  
+  // The list of templates being available. The first entry is the default template.
+  "templates": [
+    {
+      "name": "skyblockrepair",
+      "desc": "",
+      "file": "skyblock.nbt",
+      "spawns": "skyblockrepair",
+      "direction": "south"
+    }
+  ]
+}

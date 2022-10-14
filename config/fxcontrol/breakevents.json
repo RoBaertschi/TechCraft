@@ -1,0 +1,11 @@
+[
+    /*{
+        "playerhelditem": {
+             "empty": true 
+        },
+        "block": "minecraft:stone",
+        "give": "minecraft:cobblestone",
+        "message": "Test!",
+        "result": "allow"
+    }*/
+]
